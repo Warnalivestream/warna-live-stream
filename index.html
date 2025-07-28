@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Warna Live Stream 🎧</title>
-  <link rel="icon" href="https://i.postimg.cc/nzcywYt7/warna-audio-cover.jpg" />
-
-  <!-- Open Graph untuk tampilan saat dishare -->
-  <meta property="og:title" content="Warna Live Stream 🎧" />
-  <meta property="og:description" content="Klik untuk mendengarkan radio streaming favoritmu!" />
-  <meta property="og:image" content="https://i.postimg.cc/nzcywYt7/warna-audio-cover.jpg" />
-  <meta property="og:url" content="https://YOUR-USERNAME.github.io/warna-live-stream/" />
-  <meta property="og:type" content="website" />
-
+  <meta charset="UTF-8">
+  <title>WARNA AUDIO STREAM 🎧</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background: url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf') no-repeat center center fixed;
-      background-size: cover;
+      height: 100%;
+      width: 100%;
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1526481280690-031adbc71143?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
       color: white;
     }
 
-    .container {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 30px 40px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+    .container {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      max-width: 90%;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 25px;
+      color: #ffffff;
     }
 
     audio {
-      width: 100%;
-      margin-top: 20px;
+      width: 200px;
+      height: 50px;
+      border-radius: 12px;
+      background: white;
     }
 
-    .share {
+    .footer {
       margin-top: 25px;
+      font-size: 16px;
+      color: #dddddd;
     }
 
-    .share a {
-      color: #00ffcc;
-      text-decoration: none;
-      font-size: 1em;
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        width: 90%;
-        padding: 20px;
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 30px;
       }
-      h1 {
-        font-size: 2em;
+
+      audio {
+        width: 180px;
+        height: 45px;
+      }
+
+      .container {
+        padding: 30px 20px;
+      }
+
+      .footer {
+        font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Warna Live Stream 🎧</h1>
-    <p>Silakan klik tombol play di bawah ini untuk mulai mendengarkan:</p>
+  <div class="overlay">
+    <div class="container">
+      <h2>🎧 WARNA AUDIO STREAM</h2>
 
-    <audio controls autoplay>
-      <source src="https://warna.listen2myshow.com/" type="audio/mpeg">
-      Browser Anda tidak mendukung pemutar audio.
-    </audio>
+      <!-- Audio Player dengan border -->
+      <audio controls autoplay>
+        <source src="https://warna.listen2myshow.com/proxy/warna" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutar audio.
+      </audio>
 
-    <div class="share">
-      <p>Bagikan ke temanmu:</p>
-      <a href="https://wa.me/?text=Dengarkan%20%2A%Warna%20Live%20Stream%2A%20di%20https%3A%2F%2FYOUR-USERNAME.github.io%2Fwarna-live-stream%2F" target="_blank">🔗 WhatsApp</a>
+      <div class="footer">📻 Created by MasBud</div>
     </div>
   </div>
 </body>
