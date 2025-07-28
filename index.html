@@ -2,85 +2,37 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Warna Live Stream 🎧</title>
-  <link rel="icon" href="https://i.postimg.cc/nzcywYt7/warna-audio-cover.jpg" />
-
-  <!-- Open Graph untuk tampilan saat dishare -->
-  <meta property="og:title" content="Warna Live Stream 🎧" />
-  <meta property="og:description" content="Klik untuk mendengarkan radio streaming favoritmu!" />
-  <meta property="og:image" content="https://i.postimg.cc/nzcywYt7/warna-audio-cover.jpg" />
-  <meta property="og:url" content="https://YOUR-USERNAME.github.io/warna-live-stream/" />
-  <meta property="og:type" content="website" />
-
+  <title>Warna Live Stream</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: white;
-    }
-
-    .container {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 30px 40px;
-      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background: #121212;
+      color: #eee;
     }
-
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
     }
-
-    audio {
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    .share {
-      margin-top: 25px;
-    }
-
-    .share a {
-      color: #00ffcc;
+    a.button {
+      font-size: 1.5rem;
+      padding: 15px 30px;
+      background: #00bfff;
+      color: white;
+      border-radius: 10px;
       text-decoration: none;
-      font-size: 1em;
+      transition: background 0.3s ease;
+      display: inline-block;
     }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        width: 90%;
-        padding: 20px;
-      }
-      h1 {
-        font-size: 2em;
-      }
+    a.button:hover {
+      background: #008fcc;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Warna Live Stream 🎧</h1>
-    <p>Silakan klik tombol play di bawah ini untuk mulai mendengarkan:</p>
-
-    <audio controls autoplay>
-      <source src="https://warna.listen2myshow.com/" type="audio/mpeg">
-      Browser Anda tidak mendukung pemutar audio.
-    </audio>
-
-    <div class="share">
-      <p>Bagikan ke temanmu:</p>
-      <a href="https://wa.me/?text=Dengarkan%20%2A%Warna%20Live%20Stream%2A%20di%20https%3A%2F%2FYOUR-USERNAME.github.io%2Fwarna-live-stream%2F" target="_blank">🔗 WhatsApp</a>
-    </div>
-  </div>
+  <h1>🎧 Warna Live Stream</h1>
+  <p>Klik tombol di bawah untuk mendengarkan langsung</p>
+  <a href="https://warna.listen2myshow.com" target="_blank" class="button">Dengarkan Sekarang</a>
 </body>
 </html>
